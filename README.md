@@ -26,4 +26,4 @@ I would like to discuss the link between atom and Github more in depth because I
 ## Question 5
 I helped my classmate, Cody Krull, out with a few hiccups we encountered when first using GitHub Desktop. We had issues seeing the changes part of the page but resolved it.
 
-![Image of my editor](erin-flint-atom-screenshot.png)
+![Image of my editor](erin-flint-atom-screenshot.jpg)
