@@ -25,4 +25,5 @@ I had some issues with remembering how to use terminal but I solved them by goin
 I would like to discuss the link between atom and Github more in depth because I'm not entirely sure I completely grasp it. I understand how to use them, I just am unsure as to why they work together and would like to expand my knowledge surrounding that.
 ## Question 5
 I helped my classmate, Cody Krull, out with a few hiccups we encountered when first using GitHub Desktop. We had issues seeing the changes part of the page but resolved it.
+
 ![Screen Shot 2018-09-04 at 6.32.43 PM](Screen Shot 2018-09-04 at 6.32.43 PM.jpg)
