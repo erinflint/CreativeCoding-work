@@ -20,10 +20,10 @@ I also learned about using version control and why it is convenient for tracking
 ## Question 2
 The steps I took to complete this assignment were quite simple, I read through the Github pages and followed along with the videos.
 ## Question 3
-I had some issues with remembering how to use terminal but I solved them by going back to the week 1 modules and revisiting the information included in the `Your Development Environment` section. It wasn't necessary for me to post my issues to the class repo issue tracker because it was easy for me to simply go back to the previous lesson and rewatch a few videos.
+I had some issues with remembering how to use terminal but I solved them by going back to the week 1 modules and revisiting the information included in the `Your Development Environment` section. It wasn't necessary for me to post my issues to the class repo issue tracker because it was easy for me to simply go back to the previous lesson and rewatch a few videos. I also had a major issue figuring out how to embed an image and, of course, the solution was quite simple and I merely overthought it.
 ## Question 4
 I would like to discuss the link between atom and Github more in depth because I'm not entirely sure I completely grasp it. I understand how to use them, I just am unsure as to why they work together and would like to expand my knowledge surrounding that.
 ## Question 5
-I helped my classmate, Cody Krull, out with a few hiccups we encountered when first using GitHub Desktop. We had issues seeing the changes part of the page but resolved it.
+I helped my classmate, Cody Krull, out with a few hiccups we encountered when first using GitHub Desktop. We had issues seeing the changes part of the page but resolved it. I also helped a classmate with embedding an image because they seemed to have the same issue I was having with my embedding process.
 
 ![Image of my editor](erin-flint-screenshot.jpg)
