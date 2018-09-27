@@ -1,69 +1,36 @@
 function setup(){
-  //create canvas size 600px wide and 400px high
-  createCanvas( 450, 700 );
+  createCanvas( 800, 600 )
+  background( 'rgb(90, 180, 200)');
+frameRate( 6 );
 }
-//eyes
-function draw() {
-  background( 'rgb(78, 230, 180)' );
-//head shape
-  fill('pink');
-  ellipse( 150, 125, 100, 100 );
 
-//body
-  fill('yellow');
-  triangle( 100, 175, 200, 175, 150, 250 );
+let angle = 0;
+let myVar = 100
 
+//make circle move with mouse
+function draw(){
+  noCursor();
+  fill( 255 );
+  ellipse( mouseX, mouseY, 40 );
 
-//second abdomen
-fill('yellow');
-triangle( 100, 250, 200, 250, 170, 350 );
+//center it!
+translate( width/2, height/2 );
 
-//third abdomen
-fill('yellow');
-triangle( 110, 360, 220, 350, 200, 450 );
+  //make moving/blinking triangles
+  fill( 'rgb(230, 100, 80)');
+  triangle( 50, 700, 80, 700, 65, 750 );
+    rotate( radians(angle) );
+    angle = angle + 25;
 
-//fourth abdomen
-fill('yellow');
-triangle( 150, 460, 240, 450, 280, 550 );
-//first torso legs
-line( 40, 220, 55, 200 );
-line( 55, 200, 110, 200 );
-line( 190, 200, 240, 200 );
-line( 240, 200, 260, 240 );
-
-//horns
-line( 105, 50, 100, 100 );
-line( 100, 100, 125, 110 );
-line( 190, 50, 190, 100 );
-line( 190, 100, 170, 110 );
-line( 75, 75, 100, 85 );
-line( 190, 75, 215, 65 );
-
-//second torso legs
-line( 40, 320, 50, 290 );
-line( 50, 290, 120, 290 );
-line( 190, 290, 240, 290 );
-line( 240, 290, 260, 320 );
-//third torso legs
-line( 90, 460, 100, 420 );
-line( 100, 420, 140, 400 );
-line( 210, 390, 250, 390 );
-line( 250, 390, 270, 420 );
-//fourth torso legs
-line( 200, 600, 180, 540 );
-line( 180, 540, 200, 500 );
-line( 255, 480, 280, 480 );
-line( 280, 480, 310, 530 );
-//tail
-line( 280, 550, 320, 650 );
-line( 280, 550, 300, 640 );
-line( 280, 550, 280, 630 );
-line( 280, 550, 330, 640 );
-line( 280, 550, 340, 625 );
-//mouth
-fill('red');
-arc( 120, 150, 80, 20, 180, 45 );
-fill('black');
-strokeWeight(5);
-point( 100, 120 );
+//create background triangles
+fill( 'rgb(255, 210, 94)' );
+triangle( myVar, 700, 200, 500, 300, 700 );
+triangle( 400, 600, 500, 400, 600, 600 );
+triangle( 200, 250, 500, 250, 350, 450 );
+triangle( 50, 350, 150, 350, myVar, 450 );
+triangle( 550, 300, 750, 300, 650, 450 );
+triangle( 250, 200, 450, 200, 350, 50 );
+triangle( 20, 50, 140, 50, 80, 275 );
+triangle( 500, myVar, 700, myVar, 600, 250 );
+triangle( 650, 500, 750, 500, 700, 575 );
 }
