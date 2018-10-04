@@ -1,36 +1,48 @@
-function setup(){
-  createCanvas( 800, 600 )
-  background( 'rgb(90, 180, 200)');
-frameRate( 6 );
+function setup() {
+    // createCanvas( windowWidth, windowHeight );
+    createCanvas( windowWidth, 800 );
+    frameRate( 5 );
+    background( 'rgb(45, 60, 60)' );
+
 }
+let x_pos = 0;
 
-let angle = 0;
-let myVar = 100
 
-//make circle move with mouse
-function draw(){
-  noCursor();
-  fill( 255 );
-  ellipse( mouseX, mouseY, 40 );
+function draw() {
+    noFill();
+    stroke( 255 );
+// blinking circles
+    let circle_size = random( 20, width-30 );
+    ellipse( width/3, height/2, circle_size );
+    ellipse( width/1, height/4, circle_size);
+    ellipse( width/1, height/2, circle_size);
+    ellipse( width/5, height/2, circle_size);
 
-//center it!
-translate( width/2, height/2 );
+        eSize = 25;
+        x1 = mouseX;
+        y1 = height * 0.8;
+        x2 = sqrt(x1);
+        y2 = height * 0.2;
+// mouse-following circles
+        line(0, y1, width, y1);
+        ellipse(x1, y1, eSize, eSize);
 
-  //make moving/blinking triangles
-  fill( 'rgb(230, 100, 80)');
-  triangle( 50, 700, 80, 700, 65, 750 );
-    rotate( radians(angle) );
-    angle = angle + 25;
+        line(0, y2, width, y2);
+        ellipse(x2, y2, eSize, eSize);
 
-//create background triangles
-fill( 'rgb(255, 210, 94)' );
-triangle( myVar, 700, 200, 500, 300, 700 );
-triangle( 400, 600, 500, 400, 600, 600 );
-triangle( 200, 250, 500, 250, 350, 450 );
-triangle( 50, 350, 150, 350, myVar, 450 );
-triangle( 550, 300, 750, 300, 650, 450 );
-triangle( 250, 200, 450, 200, 350, 50 );
-triangle( 20, 50, 140, 50, 80, 275 );
-triangle( 500, myVar, 700, myVar, 600, 250 );
-triangle( 650, 500, 750, 500, 700, 575 );
+        let y_pos = height - ((x_pos / width) ** 2) * height;
+// moving yellow circle
+        noStroke();
+        console.log( x_pos );
+        console.log( y_pos );
+
+        noStroke();
+        fill( 'yellow' );
+        ellipse( x_pos, y_pos, 60 );
+
+        x_pos =+ 100;
+        x_pos %= width;
+
+var x1 = map(mouseX, 0, width, 0, 100, true);
+ellipse(x2, 75, 25, 25);
 }
