@@ -1,48 +1,30 @@
+
 function setup() {
-    // createCanvas( windowWidth, windowHeight );
-    createCanvas( windowWidth, 800 );
-    frameRate( 5 );
-    background( 'rgb(45, 60, 60)' );
-
+  createCanvas( windowWidth, 600 );
 }
-let x_pos = 0;
-
 
 function draw() {
-    noFill();
-    stroke( 255 );
-// blinking circles
-    let circle_size = random( 20, width-30 );
-    ellipse( width/3, height/2, circle_size );
-    ellipse( width/1, height/4, circle_size);
-    ellipse( width/1, height/2, circle_size);
-    ellipse( width/5, height/2, circle_size);
+  background( 'pink');
+  strokeWeight( 6 );
 
-        eSize = 25;
-        x1 = mouseX;
-        y1 = height * 0.8;
-        x2 = sqrt(x1);
-        y2 = height * 0.2;
-// mouse-following circles
-        line(0, y1, width, y1);
-        ellipse(x1, y1, eSize, eSize);
+for (var x = 0; x <= mouseX; x += 40){
+  for(var y = 10; y<= mouseY; y += 20){
+  fill( random(255), 0, random(255));
+  ellipse (x + y, y, 8-y/6, 8-y/6);
+  }
+}
 
-        line(0, y2, width, y2);
-        ellipse(x2, y2, eSize, eSize);
-
-        let y_pos = height - ((x_pos / width) ** 2) * height;
-// moving yellow circle
-        noStroke();
-        console.log( x_pos );
-        console.log( y_pos );
-
-        noStroke();
-        fill( 'yellow' );
-        ellipse( x_pos, y_pos, 60 );
-
-        x_pos =+ 100;
-        x_pos %= width;
-
-var x1 = map(mouseX, 0, width, 0, 100, true);
-ellipse(x2, 75, 25, 25);
+fill('purple');
+ellipse(200, mouseX, 60);
+fill(200);
+ellipse(40, mouseY, 60);
+fill('blue');
+ellipse(400, mouseX, 60);
+fill('pink');
+ellipse(600, mouseY, 60);
+fill('yellow');
+ellipse(mouseX, mouseY, 50, 50);
+fill(0);
+ellipse(900, mouseX, 60);
+ellipse(mouseX, mouseY, 20, 20);
 }
